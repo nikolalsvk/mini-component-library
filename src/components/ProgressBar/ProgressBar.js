@@ -43,8 +43,8 @@ const ProgressBar = ({ value, size }) => {
 };
 
 const BarBase = styled.div`
-  background: hsla(0, 0%, 50%, 0.15);
-  box-shadow: 0px 2px 4px 0px hsla(0, 0%, 50%, 0.35) inset;
+  background: ${COLORS.transparentGray15};
+  box-shadow: 0px 2px 4px 0px ${COLORS.transparentGray35} inset;
 
   border-radius: var(--radius);
   padding: var(--pading);
@@ -58,7 +58,7 @@ const BarWrapper = styled.div`
 const BarLine = styled.div`
   height: var(--line-height);
   width: ${(prop) => prop.width}%;
-  background: #4747eb;
+  background: ${COLORS.primary};
   border-radius: 4px 0px 0px 4px;
 `;
 
