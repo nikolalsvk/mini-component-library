@@ -10,7 +10,7 @@ const Select = ({ label, value, onChange, children }) => {
 
   return (
     <Wrapper>
-      <NativeSelect value={value} onChange={onChange}>
+      <NativeSelect aria-label={label} value={value} onChange={onChange}>
         {children}
       </NativeSelect>
       <PresentationalBit>
